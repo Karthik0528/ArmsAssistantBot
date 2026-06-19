@@ -26,6 +26,8 @@ TRACKED_COURSES = [
     "Computer Networks"
 ]
 
+ATTENDANCE_THRESHOLD = 80
+
 email_sender = os.environ["EMAIL_SENDER"]
 email_password = os.environ["EMAIL_APP_PASSWORD"]
 email_receiver = os.environ["EMAIL_RECEIVER"]

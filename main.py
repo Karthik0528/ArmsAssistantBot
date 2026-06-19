@@ -248,12 +248,7 @@ try:
                 print("Total       :", total)
                 print("Percentage  :", percentage)
 
-                current_data = {
-    "attended": attended,
-    "total": total,
-    "percentage": percentage,
-    "low_alert_sent": needed > 0
-}
+                
 
                 previous_data = cache.get(course_name)
 

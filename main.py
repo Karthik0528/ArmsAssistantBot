@@ -226,7 +226,10 @@ try:
             total = cols[5].text.strip()
             percentage = cols[7].text.strip()
 
-           matched = True
+            matched = any(
+                keyword.lower() in course_name.lower()
+                for keyword in TRACKED_COURSES
+            )
             TRACKED_COURSES = [
     "Computer Networks",
     "Professional Certification"

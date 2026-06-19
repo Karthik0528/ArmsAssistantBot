@@ -305,18 +305,18 @@ try:
                     pct = 0
 
                 current_data = {
-    "attended": attended,
-    "total": total,
-    "percentage": percentage,
-    "low_alert_sent": False
-}
+                    "attended": attended,
+                    "total": total,
+                    "percentage": percentage,
+                    "low_alert_sent": False
+                }
 
-needed = classes_needed(
-    attended,
-    total
-)
+                needed = classes_needed(
+                    attended,
+                    total
+                )
 
-if needed > 0:
+                if needed > 0:
 
                     alert_message = f"""
 ⚠️ LOW ATTENDANCE ALERT

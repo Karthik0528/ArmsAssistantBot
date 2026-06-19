@@ -304,10 +304,12 @@ try:
 
                     pct = 0
 
-                needed = classes_needed(
-                    attended,
-                    total
-                )
+                current_data = {
+    "attended": attended,
+    "total": total,
+    "percentage": percentage,
+    "low_alert_sent": False
+}
 
                 if needed > 0:
 

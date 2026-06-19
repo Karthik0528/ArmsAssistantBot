@@ -311,7 +311,12 @@ try:
     "low_alert_sent": False
 }
 
-                if needed > 0:
+needed = classes_needed(
+    attended,
+    total
+)
+
+if needed > 0:
 
                     alert_message = f"""
 ⚠️ LOW ATTENDANCE ALERT

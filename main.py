@@ -161,6 +161,11 @@ try:
 
     print("Login Successful!")
 
+print("Login Successful!")
+send_email(
+    "ARMS Bot Test",
+    "If you receive this email, SMTP is working correctly."
+)
 
     # ======================================
     # ATTENDANCE CONFIRMATION

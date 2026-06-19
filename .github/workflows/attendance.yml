@@ -3,6 +3,12 @@ name: ARMS Attendance Agent
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '50 2 * * 1-6'
+    - cron: '50 4 * * 1-6'
+    - cron: '50 6 * * 1-6'
+    - cron: '50 8 * * 1-6'
+
 jobs:
   attendance:
     runs-on: ubuntu-latest

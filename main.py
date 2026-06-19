@@ -66,8 +66,8 @@ def send_email(subject, body):
         server.starttls()
 
         server.login(
-            EMAIL_SENDER,
-            EMAIL_PASSWORD
+            email_sender,
+            email_password
         )
 
         server.send_message(msg)
@@ -139,12 +139,12 @@ try:
     driver.find_element(
         By.ID,
         "txtusername"
-    ).send_keys(USERNAME)
+    ).send_keys(username)
 
     driver.find_element(
         By.ID,
         "txtpassword"
-    ).send_keys(PASSWORD)
+    ).send_keys(password)
 
     driver.find_element(
         By.ID,
@@ -352,6 +352,6 @@ except Exception as e:
 
 finally:
 
-    input("\nPress ENTER to close...")
+    print("Finished.")
 
     driver.quit()

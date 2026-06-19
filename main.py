@@ -17,17 +17,14 @@ from webdriver_manager.chrome import ChromeDriverManager
 # LOAD CONFIG
 # ======================================
 
-with open("config.json", "r") as f:
-    config = json.load(f)
+import os
 
-USERNAME = os.environ["ARMS_USERNAME"]
-PASSWORD = os.environ["ARMS_PASSWORD"]
-TRACKED_COURSES = config["tracked_courses"]
-ATTENDANCE_THRESHOLD = config["attendance_threshold"]
+username = os.environ["ARMS_USERNAME"]
+password = os.environ["ARMS_PASSWORD"]
 
-EMAIL_SENDER = os.environ["EMAIL_SENDER"]
-EMAIL_PASSWORD = os.environ["EMAIL_APP_PASSWORD"]
-EMAIL_RECEIVER = os.environ["EMAIL_RECEIVER"]
+email_sender = os.environ["EMAIL_SENDER"]
+email_password = os.environ["EMAIL_APP_PASSWORD"]
+email_receiver = os.environ["EMAIL_RECEIVER"]
 
 # ======================================
 # CACHE
